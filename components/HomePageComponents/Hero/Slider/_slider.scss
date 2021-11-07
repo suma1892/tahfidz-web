@@ -1,0 +1,45 @@
+.slider {
+  padding-top: 160px;
+  z-index: -99;
+  &-images {
+    width: 100%;
+    height: 600px;
+  }
+
+  .react-multiple-carousel__arrow {
+    background: #fff;
+    box-shadow: 2px 1px 10px #00000029;
+  }
+
+  .react-multiple-carousel__arrow:hover {
+    background: $grey-light;
+  }
+
+  .react-multiple-carousel__arrow::before {
+    color: #000;
+    font-weight: 800;
+  }
+
+  .react-multi-carousel-dot-list {
+    bottom: 30px;
+  }
+
+  .react-multi-carousel-dot--active {
+    button {
+      width: 12px !important;
+      height: 12px !important;
+    }
+  }
+
+  .react-multi-carousel-dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      border-style: hidden;
+      width: 8px;
+      height: 8px;
+    }
+  }
+}

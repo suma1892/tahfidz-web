@@ -1,0 +1,9 @@
+.container {
+  padding: 0 4.5%;
+  margin: auto;
+  max-width: 1600px;
+
+  @include x-large() {
+    padding: 0 10%;
+  }
+}

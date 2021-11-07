@@ -1,0 +1,54 @@
+.menu {
+  width: 458px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    * {
+      font-family: $font-prata;
+    }
+
+    &-item {
+      font-size: 14px;
+      font-weight: normal;
+      letter-spacing: 0px;
+      text-align: center;
+      width: 100%;
+
+
+      &:hover {
+        cursor: pointer;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 8px;
+          height: 8px;
+          background: black;
+          border-radius: 50%;
+          border-style: hidden;
+          margin: 10px auto auto auto;
+          margin-bottom: -18px;
+        }
+      }
+    }
+  }
+
+  .active::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: black;
+    border-radius: 50%;
+    border-style: hidden;
+    margin: 10px auto auto auto;
+    margin-bottom: -18px;
+  }
+}

@@ -1,0 +1,12 @@
+.action {
+  img {
+    width: 24px;
+    height: 24px;
+    margin-left: 46px;
+
+    &:hover {
+      cursor: pointer;
+      transition: 0.4s ease-in;
+    }
+  }
+}

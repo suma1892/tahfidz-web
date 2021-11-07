@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54" height="54" viewBox="0 0 54 54">
+  <defs>
+    <filter id="Ellipse_16" x="0" y="0" width="54" height="54" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_15323" data-name="Group 15323" transform="translate(13 14)">
+    <g transform="matrix(1, 0, 0, 1, -13, -14)" filter="url(#Ellipse_16)">
+      <circle id="Ellipse_16-2" data-name="Ellipse 16" cx="12" cy="12" r="12" transform="translate(13 14)" fill="#fff"/>
+    </g>
+    <g id="Group_15288" data-name="Group 15288" transform="translate(10.238 15.509) rotate(-90)">
+      <path id="Path_9078" data-name="Path 9078" d="M7.05.835,6.238,0,3.447,2.713.837.013,0,.822l3.422,3.54Z" fill="#4c4c4c"/>
+    </g>
+  </g>
+</svg>

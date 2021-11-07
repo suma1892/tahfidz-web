@@ -1,0 +1,33 @@
+// colors
+$black: #000;
+$black-min-opacity: #00000029;
+$grey: #BDBDBD;
+$grey-light: #EAEAEA;
+$grey-dark: #707070;
+$grey-darker: #4C4C4C;
+$grey-light-min-opacity: #EAEAEAD9;
+$white: #fff;
+
+// variables
+$primary-color: $black;
+
+$background-grey: $grey-light;
+$background-grey-transparent: $grey-light-min-opacity;
+
+$dropshadow: $black-min-opacity;
+$text-placeholder: $grey-dark;
+
+$text-primary: $primary-color;
+$text-black: $black;
+$text-white: $white;
+$text-grey: $grey-darker;
+$text-grey-disable: $grey;
+
+// fonts
+$font-mulish: 'Mulish',
+sans-serif;
+$font-prata: 'prata',
+serif;
+
+// z-indexes
+$floating-whatsapp: 999999;

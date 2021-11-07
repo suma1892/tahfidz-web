@@ -1,0 +1,35 @@
+.greating {
+    margin-top: 800px;
+    display: flex;
+    flex-direction: row;
+    &-text-wrapper {
+        margin: 10px;
+        margin-left: 30px;
+    }
+    &-title {
+        font-size: 30px;
+        // color: #fff;
+    }
+    &-desc {
+        font-size: 15px;
+        // color: #fff;
+        margin-top: 10px;
+        font-style: normal;
+        font-family: $font-prata;
+        letter-spacing: 1px;
+        word-spacing: 10px;
+    }
+    &-button {
+        background: #88ce66;
+        width: 90px;
+        // align-items: center;
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        &-text {
+            font-size: 14px;
+            color: #fff;
+        }
+    }
+}
