@@ -19,7 +19,7 @@ header {
   position: relative;
 }
 
-@import "./menu/menu";
+@import "./menu/_menu.scss";
 @import "./action/action";
 @import "./CakeCategory/cake-category";
 @import "./Information/information";
