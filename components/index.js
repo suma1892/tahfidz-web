@@ -1,4 +1,4 @@
-import { Hero, OurMenu, NewsletterComponent, SpecialInfoComponent, Board, Greating } from './HomePageComponents';
+import { Hero, Board, Greating } from './HomePageComponents';
 // import { SearchBar } from './SearchPageComponents';
 import { Footer } from './Global';
 // import { AccountComponent, ListContent } from './AccountPageComponent';
@@ -6,10 +6,8 @@ import { Footer } from './Global';
 
 export {
   Hero,
-  OurMenu,
   // OurMenuCard,
-  NewsletterComponent,
-  SpecialInfoComponent,
+  // NewsletterComponent,
   // CardSpecialPromo,
   Footer,
   Board,
