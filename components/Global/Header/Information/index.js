@@ -7,16 +7,14 @@ const Information = () => {
   return (
     <div className="container">
     <div className="information">
-      <div className="information-icon" style={{alignItems: 'center'}}>
-      <Link href='/search'>
-        <a className="information-icon">
+      <div className="information-icon">
+        <div className="information-icon">
           <img src={tahfidzIcon} alt="cart-icon" />
-          <div style={{marginTop: 20}}>
+          <div style={{marginTop: 0}}>
             <h1 className="information-title">YITAS</h1>
             <h1 className="information-description">Yayasan Istiqomah Tarbiyah Sunnah</h1>
           </div>
-        </a>
-      </Link>
+        </div>
       <div className="information-flexing">
       <a className="information-icon information-line">
           <img src={phoneIcon} style={{height: 30, width: 30, marginRight: 10}} alt="cart-icon" />
