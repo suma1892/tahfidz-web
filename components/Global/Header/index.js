@@ -8,11 +8,6 @@ import Information from './Information';
 const Header = ({ route }) => {
   return (
     <header>
-      <div className="header-main container">
-        <Logo />
-        <Action />
-        <Menu/>
-      </div>
       <Information/>
       {/* <div className="header-dropdown">
         <CakeCategory />

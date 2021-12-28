@@ -11,7 +11,7 @@ const Hero = ({ route }) => {
     <div className="hero">
       <Header route={route} />
       {/* <Announcement /> */}
-      <Slider />
+      {/* <Slider /> */}
     </div>
   );
 };

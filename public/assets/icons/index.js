@@ -27,6 +27,18 @@ const tahfidzIcon = './assets/icons/tahfidz.png';
 const emailIcon = './assets/icons/email.png';
 const phoneIcon = './assets/icons/phone.png';
 const arrowIcon = './assets/icons/rightarrow.png';
+const bgHero = './assets/icons/g1.jpeg';
+const bgSecond = './assets/icons/bannerBlue.png';
+// const bgSecond = './assets/icon/bannerBlue.jpg';
+const whiteTahfidz = './assets/icons/whiteTahfidz.png';
+const burgerIcon = './assets/icons/burger.png';
+const headschool = './assets/icons/headschool.jpg';
+const bannerDonasi = './assets/icons/donasi.jpg';
+const bgButterfly = './assets/icons/bgButterfly.png';
+const bgButterfly2 = './assets/icons/bgButterflies2.png';
+const bgFlower = './assets/icons/bgFlower.png';
+const childrens = './assets/icons/childrens.jpeg';
+const teacher = './assets/icons/teacher.jpg';
 
 export {
   rightArrowIcon,
@@ -57,5 +69,16 @@ export {
   tahfidzIcon,
   phoneIcon,
   emailIcon,
-  arrowIcon
+  arrowIcon,
+  bgHero,
+  whiteTahfidz,
+  burgerIcon,
+  bgSecond,
+  headschool,
+  bannerDonasi,
+  bgButterfly,
+  bgFlower,
+  childrens,
+  bgButterfly2,
+  teacher,
 };

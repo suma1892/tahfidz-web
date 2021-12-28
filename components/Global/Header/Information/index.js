@@ -1,38 +1,53 @@
-import React from "react";
+import React, { useContext } from "react";
 import Link from 'next/link'
 
-import { facebookIcon, tahfidzIcon, phoneIcon, emailIcon} from "public/assets/icons";
+import { whiteTahfidz, burgerIcon, emailIcon, bgHero } from "public/assets/icons";
+import { AppContext } from 'context/AppContext';
 
 const Information = () => {
+  const { isMedium, isMobile } = useContext(AppContext)
+
   return (
-    <div className="container">
-    <div className="information">
-      <div className="information-icon">
-        <div className="information-icon">
-          <img src={tahfidzIcon} alt="cart-icon" />
-          <div style={{marginTop: 0}}>
-            <h1 className="information-title">YITAS</h1>
-            <h1 className="information-description">Yayasan Istiqomah Tarbiyah Sunnah</h1>
-          </div>
-        </div>
-      <div className="information-flexing">
-      <a className="information-icon information-line">
-          <img src={phoneIcon} style={{height: 30, width: 30, marginRight: 10}} alt="cart-icon" />
-          <div>
-            <h1 className="information-title-mini">Kontak</h1>
-            <h1 className="information-description">+628123456789</h1>
-          </div>
-      </a>
-      <a className="information-icon information-line">
-          <img src={emailIcon} style={{height: 30, width: 30, marginRight: 10}} alt="cart-icon" />
-          <div>
-            <h1 className="information-title-mini">Email</h1>
-            <h1 className="information-description">tahfidz@gmail.com</h1>
-          </div>
-      </a>
-        </div>
+    <div>
+      <div className="img-bg-wrapper">
+        <img src={bgHero} alt="bg-hero" className="bg-hero" />
       </div>
-    </div>
+
+      <div className="information container">
+        <div className="">
+          <div className="information-icon">
+            <div className="information-icon">
+              <div className="information-img-wrapper">
+                <img src={whiteTahfidz} alt="cart-icon" />
+              </div>
+              <div style={{ marginTop: 0 }}>
+                <h1 className="information-title">YITAS</h1>
+                <h1 className="information-description">{'Yayasan Istiqomah Tarbiyah Sunnah'}</h1>
+              </div>
+            </div>
+            <div className="information-burger" >
+              <img src={burgerIcon} alt="cart-icon" />
+            </div>
+            {<div className="information-flexing">
+              <div className="information-dropdown">
+                <h1 className="information-title-mini">Profil</h1>
+                <div className="information-dropdown-content">
+                  <a href="#">Profil Sekolah</a>
+                  <a href="#">Profil Pengajar</a>
+                  <a href="#">Profil Murid</a>
+                </div>
+              </div>
+              <h1 className="information-title-mini">Berita</h1>
+              <h1 className="information-title-mini">PPDB</h1>
+              <h1 className="information-title-mini">Galeri</h1>
+              <h1 className="information-title-mini">Artikel</h1>
+            </div>}
+          </div>
+          
+        </div>
+        <h1 className="title-center">an inspired life begins</h1>  
+      </div>
+      
     </div>
   );
 };

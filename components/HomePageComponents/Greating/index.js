@@ -1,6 +1,8 @@
 import React from "react";
 import BoardCard from '@/components/Global/Cards/BoardCard'
 const headWebp = '/assets/images/headschool.webp';
+import { bgSecond, headschool, bannerDonasi } from "public/assets/icons";
+import { GreatingCard } from "./greatingCard";
 
 const Greating = ({ route }) => {
   if (!route) {
@@ -8,16 +10,20 @@ const Greating = ({ route }) => {
   }
 
   return (
-    <div className="greating container">
-        <img src={headWebp} alt="head-school" style={{height: 400, width: 500}} />
+    <div className="greating">
+      <img src={bgSecond} alt="bg-second" className="greating-bg-second" />
+      <div className="greating-wrapper container">
 
-        <div className="greating-text-wrapper">
-          <h1 className="greating-title">Sambutan Kepala Sekolah</h1>
-          <h1 className="greating-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum varius velit et facilisis. Morbi eu velit sed sapien bibendum faucibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum varius velit et facilisis. Morbi eu velit sed sapien bibendum faucibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum varius velit et facilisis. Morbi eu velit sed sapien bibendum faucibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum varius velit et facilisis. Morbi eu velit sed sapien bibendum faucibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum varius velit et facilisis. Morbi eu velit sed sapien bibendum faucibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum varius velit et facilisis. Morbi eu velit sed sapien bibendum faucibus.</h1>
-          <div className="greating-button">
-            <h1 className="greating-button-text">read more</h1>
-          </div>
+        <h1 className="greating-wrapper-title">Berita Terkini</h1>
+
+        <div className="greating-wrapper-schedule">
+          {[...Array(3)].map((res, i) => <GreatingCard key={i} />)}
         </div>
+
+        <div className="greating-wrapper-schedule-button">
+          Lainnya
+        </div>
+      </div>
     </div>
   );
 };

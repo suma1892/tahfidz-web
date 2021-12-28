@@ -1,4 +1,4 @@
-import { Hero, Board, Greating } from './HomePageComponents';
+import { Hero, Board, Greating, Registration, Programs, Teachers } from './HomePageComponents';
 // import { SearchBar } from './SearchPageComponents';
 import { Footer } from './Global';
 // import { AccountComponent, ListContent } from './AccountPageComponent';
@@ -11,7 +11,10 @@ export {
   // CardSpecialPromo,
   Footer,
   Board,
-  Greating
+  Greating,
+  Registration,
+  Programs,
+  Teachers,
   // SearchBar,
   // FloatingWhatsapp,
   // AccountComponent,

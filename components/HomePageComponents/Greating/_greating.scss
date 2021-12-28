@@ -1,35 +1,167 @@
 .greating {
-    margin-top: 800px;
-    display: flex;
-    flex-direction: row;
-    &-text-wrapper {
-        margin: 10px;
-        margin-left: 30px;
-    }
-    &-title {
-        font-size: 30px;
-        // color: #fff;
-    }
-    &-desc {
-        font-size: 15px;
-        // color: #fff;
-        margin-top: 10px;
-        font-style: normal;
-        font-family: $font-prata;
-        letter-spacing: 1px;
-        word-spacing: 10px;
-    }
-    &-button {
-        background: #88ce66;
-        width: 90px;
-        // align-items: center;
-        padding: 10px;
-        margin-top: 20px;
-        border-radius: 10px;
-        cursor: pointer;
-        &-text {
-            font-size: 14px;
-            color: #fff;
+    position: relative;
+    height: auto;
+
+    &-bg-second {
+        width: 100%;
+        height: 1700px;
+        margin-top: -20px;
+        object-fit: cover;
+
+        @include small() {
+            height: 1500px;
         }
+
+        @include medium() {
+            height: 900px;
+        }
+    }
+
+    &-wrapper {
+        position: absolute;
+        top: 0px;
+        display: grid;
+        width: 100%;
+        padding: 40px;
+        // flex-wrap: wrap-reverse;
+
+        @include small() {
+            // flex-wrap: wrap-reverse;
+        }
+
+        @include medium() {
+            // display: flex;
+            // flex-wrap: wrap;
+        }
+
+        &-title {
+            font-size: 25px;
+            color: #000;
+            font-family: $font-prata;
+            text-align: center;
+            align-self: center;
+
+            @include small() {
+                font-size: 15px;
+            }
+
+            @include medium() {
+                font-size: 55px;
+            }
+        }
+
+        &-schedule {
+            margin-top: 30px;
+            display: grid;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            text-align: center;
+
+            @include small() {
+                display: grid;
+            }
+
+            @include medium() {
+                display: flex;
+            }
+
+            &-card {
+                width: 100%;
+                position: relative;
+                cursor: pointer;
+                // background: red;
+                // align-items: center;
+                // text-align: center;
+                margin-top: 50px;
+
+                @include small() {
+                    width: 30%;
+                }
+
+                @include medium() {
+                    width: 30%;
+                }
+
+                &-img {
+                    height: 335px;
+                    width: 335px;
+                    border-radius: 10px;
+
+                    @include small() {
+                        height: 400px;
+                        width: 400px;
+                    }
+
+                    @include medium() {
+                        height: 400px;
+                        width: 400px;
+                    }
+                }
+
+                &-title-wrapper {
+                    position: absolute;
+                    bottom: 0px;
+                    left: 4px;
+                    box-shadow: 5px 10px $main-red;
+                    // margin-bottom: 15px;
+                    // margin-top: 20px;
+                    width: 100%;
+                    height: 100px;
+                    background: #fff;
+
+                    &-desc {
+                        font-size: 20px;
+                        font-family: $font-mulish;
+                        font-weight: 500;
+                        color: #000;
+                        text-align: left;
+                        padding: 10px;
+                    }
+
+                    &-desc2 {
+                        font-size: 13px;
+                        font-family: $font-mulish;
+                        font-weight: 500;
+                        color: #000;
+                        text-align: left;
+                        padding: 10px;
+                    }
+                }
+
+            }
+
+            &-button {
+                padding: 10px;
+                background: $main-red;
+                width: auto;
+                text-align: center;
+                border-radius: 10px;
+                margin-top: 50px;
+                align-self: flex-end;
+                color: #fff;
+                font-weight: bolder;
+                cursor: pointer;
+                font-size: 12px;
+                margin-bottom: 100px;
+                align-self: center;
+
+                @include small() {
+                    width: auto;
+                    padding: 10px;
+                    font-size: 12px;
+                }
+
+                @include medium() {
+                    width: auto;
+                    padding: 10px;
+                    font-size: 15px;
+                }
+            }
+
+        }
+
+
     }
 }

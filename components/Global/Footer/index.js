@@ -26,7 +26,7 @@ const Footer = () => {
 
         <hr />
 
-        <p className="rights">&copy; 2021 LetincellePatisserie. All Rights Reserved.</p>
+        <p className="rights">&copy; 2021 yitas. All Rights Reserved.</p>
       </div>
     </div>
   )
