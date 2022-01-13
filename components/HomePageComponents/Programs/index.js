@@ -9,7 +9,7 @@ const Programs = ({ route }) => {
 
   return (
     <div className="programs">
-      <img src={bgFlower} alt="bg-flower" className="programs-bg-second" />
+      {/* <img src={bgFlower} alt="bg-flower" className="programs-bg-second" /> */}
       <div className="programs-wrapper container">
         <h1 className="programs-wrapper-title">{`Our Programs`}</h1>
         <div className="programs-wrapper-info">

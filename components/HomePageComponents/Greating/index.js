@@ -11,8 +11,7 @@ const Greating = ({ route }) => {
 
   return (
     <div className="greating">
-      <img src={bgSecond} alt="bg-second" className="greating-bg-second" />
-      <div className="greating-wrapper container">
+      <div className="greating-wrapper">
 
         <h1 className="greating-wrapper-title">Berita Terkini</h1>
 

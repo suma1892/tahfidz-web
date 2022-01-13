@@ -11,12 +11,12 @@ const Teachers = ({ route }) => {
 
   return (
     <div className="teachers">
-      <img src={bgButterfly2} alt="bg-second" className="teachers-bg-second" />
+      {/* <img src={bgButterfly2} alt="bg-second" className="teachers-bg-second" /> */}
       <div className="teachers-wrapper container">
         <h1 className="teachers-wrapper-title">{`Our Incredible Teachers`}</h1>
         <h4 className="teachers-wrapper-desc">{`Our teachers are carefully selected for their training and experience, as well as for their commitment to working collaboratively with parents to enrich the early-childhood years.`}</h4>
         <div className="teachers-wrapper-schedule">
-          {[...Array(15)].map((res, i) => <TeacherCard key={i} />)}
+          {[...Array(3)].map((res, i) => <TeacherCard key={i} />)}
         </div>
         <div
           style={{

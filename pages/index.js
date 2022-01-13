@@ -10,11 +10,8 @@ export default function Home() {
       <Greating/>
       <Programs/>
       <Teachers/>
-      {/* <OurMenu />
-      <NewsletterComponent />
-      <SpecialInfoComponent /> */}
+      
       <Footer />
-      {/* <FloatingWhatsapp /> */}
     </>
   );
 }
