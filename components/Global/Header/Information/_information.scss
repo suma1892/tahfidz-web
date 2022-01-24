@@ -5,48 +5,41 @@
   filter: brightness(50%);
 }
 
-.title-center {
-  font-size: 40px;
-  position: absolute;
-  color: #ffff;
-  padding-top: 10px;
-  // left: 2%;
-  font-family: $font-prata;
-  align-self: center;
-  top: 170px;
-  text-align: center;
 
-  @include small() {
-    font-size: 40px;
-    // padding-top: 70px;
-    top: 130px;
-    // left: 2%;
-  }
-
-  @include medium() {
-    font-size: 65px;
-    padding-top: 60px;
-    left: 25%;
-  }
-}
 
 .information {
-  position: absolute;
-  top: 0px;
-  background: $main-red;
-  padding: 10px;
-
-  @include small() {
-    background: $main-red;
-    padding: 10px;
-  }
-
-  @include medium() {
-    background: transparent;
-    padding: 20px 200px;
-  }
-
+  
+  // padding: 10px;
+  position: relative;
+  margin-top: -20px;
   width: 100%;
+  background-image: url('../../../../public/assets/icons/g1.jpeg?filter=blurgaussian&smooth=1');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // backdrop-filter: brightness(50%);
+ 
+  &-title-center {
+    font-size: 40px;
+    color: #ffff;
+    padding-top: 10px;
+    font-family: $font-prata;
+    align-self: center;
+    top: 170px;
+    padding-bottom: 150px;
+    text-align: center;
+    margin-top: 130px;
+  
+    @include small() {
+      font-size: 40px;
+      margin-top: 130px;
+    }
+  
+    @include medium() {
+      font-size: 65px;
+      margin-top: 150px;
+    }
+  }
 
   &-dropdown {
     position: relative;
@@ -87,10 +80,14 @@
     width: 20px;
 
     @include small() {
-      display: none;
+      display: flex;
     }
 
     @include medium() {
+      display: none;
+    }
+
+    @include large() {
       display: none;
     }
 
@@ -98,9 +95,9 @@
 
   &-flexing {
     display: none;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     // flex-direction: row;
-    align-items: center;
+    // align-items: center;
 
     @include medium() {
       display: flex;
@@ -108,11 +105,23 @@
 
   }
 
-  &-icon {
+  &-header {
+    background: $main-red;
+    width: 100%;
+
+  }
+  &-wrapper {
+    
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  &-icon {
+    display: flex;
+    align-items: center;
   }
 
   &-line {
@@ -131,6 +140,10 @@
     }
 
     @include medium() {
+      font-size: 30px;
+    }
+
+    @include large() {
       font-size: 50px;
     }
 
@@ -150,6 +163,11 @@
       }
 
       @include medium() {
+        font-size: 15px;
+        font-weight: lighter;
+      }
+
+      @include large() {
         font-size: 20px;
         font-weight: lighter;
       }

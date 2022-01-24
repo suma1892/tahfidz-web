@@ -5,29 +5,20 @@
     background-image: url('../../../public/assets/icons/bannerBlue.png');
     background-size: 100%; background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 80px;
+    
     &-wrapper {
-        // position: absolute;
-        // top: 0px;
-        // display: grid;
-        // width: 100%;
-        padding: 40px;
-        // flex-wrap: wrap-reverse;
-
-        @include small() {
-            // flex-wrap: wrap-reverse;
-        }
-
-        @include medium() {
-            // display: flex;
-            // flex-wrap: wrap;
-        }
+        // padding: 40px;
+        // width: 90%;
+        // margin-inline: auto;
 
         &-title {
             font-size: 25px;
-            color: #000;
+            color: #fff;
             font-family: $font-prata;
             text-align: center;
             align-self: center;
+            padding-top: 30px;
 
             @include small() {
                 font-size: 15px;

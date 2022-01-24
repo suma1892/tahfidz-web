@@ -11,7 +11,7 @@ const Greating = ({ route }) => {
 
   return (
     <div className="greating">
-      <div className="greating-wrapper">
+      <div className="greating-wrapper container">
 
         <h1 className="greating-wrapper-title">Berita Terkini</h1>
 

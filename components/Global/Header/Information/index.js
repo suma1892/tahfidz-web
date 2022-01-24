@@ -9,13 +9,13 @@ const Information = () => {
 
   return (
     <div>
-      <div className="img-bg-wrapper">
+      {/* <div className="img-bg-wrapper">
         <img src={bgHero} alt="bg-hero" className="bg-hero" />
-      </div>
+      </div> */}
 
-      <div className="information container">
-        <div className="">
-          <div className="information-icon">
+      <div className="information">
+        <div className="information-header container">
+          <div className="information-wrapper">
             <div className="information-icon">
               <div className="information-img-wrapper">
                 <img src={whiteTahfidz} alt="cart-icon" />
@@ -39,15 +39,20 @@ const Information = () => {
               </div>
               <h1 className="information-title-mini">Berita</h1>
               <h1 className="information-title-mini">PPDB</h1>
-              <h1 className="information-title-mini">Galeri</h1>
+              <Link
+                href={{
+                  pathname: '/galery'
+                }}
+              ><h1 className="information-title-mini">Galeri</h1>
+              </Link>
               <h1 className="information-title-mini">Artikel</h1>
             </div>}
           </div>
-          
+
         </div>
-        <h1 className="title-center">an inspired life begins</h1>  
+        <h1 className="information-title-center">an inspired life begins</h1>
       </div>
-      
+
     </div>
   );
 };
